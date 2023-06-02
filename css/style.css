@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--navbar-violet-button: rgb(116, 119, 251);
+	--official-blue: rgb(24, 61, 184);
+	--official-blue-opacity: rgba(24, 61, 184, 0.5);
+	--Gilroy: "Roboto", sans-serif;
+	--Quicksand: "Quicksand", sans-serif;
+}
+
+/* !NAVBAR section START here ============================================= */
+
+.main {
+	position: relative;
+	width: 100%;
+	max-width: 100rem;
+	margin: 0 auto;
+}
+.landing-page {
+	background-image: url(../img/hero-left.png), url(../img/hero-right.png);
+	background-position: top left, top right;
+	background-repeat: no-repeat, no-repeat;
+	background-color: var(--official-blue);
+	height: 100vh;
+}
+
+.navbar {
+	list-style: none;
+	font-family: var(--Gilroy);
+}
+.navbar-ul {
+	position: absolute;
+	list-style: none;
+	display: flex;
+	right: 5%;
+	background-color: var(--official-blue-opacity);
+	padding: 1.3rem;
+	margin-top: 2rem;
+	border-radius: 5px;
+}
+.navbar .navbar-ul .navbar-li {
+	padding: 0.6rem 1.7rem;
+	color: #ffffff;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+.navbar .navbar-ul .navbar-li:hover {
+	padding: 0.3rem 1.7rem;
+}
+.navbar .navbar-ul .navbar-email {
+	background-color: #ffffff;
+	color: var(--navbar-violet-button);
+	padding: 0.6rem 2.2rem;
+	margin-left: 1rem;
+	border-radius: 50px;
+}
+.navbar .navbar-ul .navbar-email:hover {
+	padding: 0.6rem 2.5rem;
+}
+.navbar .navbar-ul .navbar-call {
+	background-color: var(--navbar-violet-button);
+	padding: 0.6rem 1.7rem;
+	margin-left: 1rem;
+	border-radius: 50px;
+}
+.navbar .navbar-ul .navbar-call:hover {
+	padding: 0.6rem 2rem;
+}
+
+/* !NAVBAR section END here ============================================= */
+
+/* !HERO section START here ============================================= */
+
+.hero-main {
+	position: absolute;
+	font-family: var(--Gilroy);
+	margin-top: 13rem;
+	margin-left: 6rem;
+}
+.hero-text .hero-text-1st,
+.hero-text .hero-text-2nd {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: var(--official-blue);
+	padding-right: 2rem;
+	font-size: 3.5rem;
+}
+.hero-text .hero-text-1st {
+	display: inline-block;
+}
+.hero-text p {
+	margin-top: 2rem;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 200;
+	line-height: 1.5rem;
+}
+.hero-link {
+	margin-top: 3rem;
+	font-family: var(--Quicksand);
+	position: relative;
+}
+.hero-link a {
+	border-radius: 50px;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 12.5rem;
+	position: absolute;
+}
+.hero-link .link-left {
+	background-color: #ffffff;
+	color: var(--official-blue);
+	padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+	font-size: 1.2rem;
+}
+.hero-link .link-right {
+	background-color: transparent;
+	padding: 1rem 2rem 1rem 1rem;
+	font-size: 1.2rem;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	margin-left: 13.5rem;
+}
+.hero-link .fa-rocket {
+	font-size: 1.7rem;
+	background-color: var(--official-blue);
+	color: #ffffff;
+	padding: 0.6rem 0.6rem 0.4rem 0.4rem;
+	border-radius: 50px;
+}
+.hero-link .fa-angle-right {
+	font-size: 1rem;
+	color: #ffffff;
+	border-radius: 50px;
+}
+
+/* !HERO section END here ============================================= */
+
+/* !ABOUT-US section START here ============================================= */
+.about-us {
+	height: 190vh;
+	background-image: url(../img/about-upper.png), url(../img/about-button.png);
+	background-position: top, bottom;
+	background-repeat: no-repeat, no-repeat;
+	position: relative;
+}
+.heading-button {
+	position: absolute;
+	display: inline-block;
+	top: 10%;
+	left: 33%;
+	border-bottom: 3px solid #cecaca;
+}
+.heading-button button {
+	border: none;
+	outline: none;
+	padding: 1.2rem 2.2rem;
+	margin-bottom: 0.5rem;
+	border-radius: 50px;
+	font-size: 1.6rem;
+}
+.heading-button-left {
+	background-color: var(--official-blue);
+	color: #ffffff;
+	margin-right: 1rem;
+}
+.heading-button-right {
+	background-color: transparent;
+	color: black;
+}
+.center-img-div {
+	background-image: url(../img/about-center.png);
+	height: 41rem;
+	width: 77rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+.about-us-text {
+	font-family: var(--Quicksand);
+	position: absolute;
+	top: 60%;
+	left: 80%;
+	transform: translate(-60%, -80%);
+	height: 19rem;
+	width: 27rem;
+}
+.about-us-text h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.about-us-text p {
+	font-size: 1.2rem;
+}
+.hero-service {
+	font-family: var(--Gilroy);
+	color: #383636;
+	position: absolute;
+	font-weight: 900;
+	font-size: 2.9rem;
+	top: 90%;
+	left: 43%;
+}
+/* !ABOUT-US section END here ============================================= */
