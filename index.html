@@ -28,7 +28,8 @@
 		<div class="main">
 			<div class="landing-page">
 				<nav class="navbar">
-					<ul class="navbar-ul">
+					<ul class="navbar-ul" id="navba-btn">
+						<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
 						<a href="#" class="navbar-li">Home</a>
 						<a href="#" class="navbar-li">About Us</a>
 						<a href="#" class="navbar-li">Service</a>
@@ -36,6 +37,7 @@
 						<a href="#" class="navbar-li navbar-email">Email</a>
 						<a href="#" class="navbar-li navbar-call">Call Now</a>
 					</ul>
+					<i class="fa-solid fa-bars" onclick="showMenu()"></i>
 				</nav>
 				<div class="hero-main">
 					<div class="hero-text">
@@ -78,9 +80,11 @@
 						</p>
 					</div>
 				</div>
-				<div class="hero-service">Our Services</div>
+				<h1 class="hero-service">Our Services</h1>
 			</div>
+			<div class="our-services"></div>
 			<div class="our-service"></div>
 		</div>
+		<script src="javascript/script.js"></script>
 	</body>
 </html>

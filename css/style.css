@@ -17,7 +17,7 @@
 .main {
 	position: relative;
 	width: 100%;
-	max-width: 100rem;
+	max-width: 120rem;
 	margin: 0 auto;
 }
 .landing-page {
@@ -25,21 +25,40 @@
 	background-position: top left, top right;
 	background-repeat: no-repeat, no-repeat;
 	background-color: var(--official-blue);
-	height: 100vh;
+	min-height: 46rem;
 }
-
+.fa-bars {
+	position: absolute;
+	background-color: transparent;
+	color: #ffffff;
+	font-size: 2rem;
+	top: 1%;
+	right: 3%;
+	margin-top: 2rem;
+	border: none;
+	outline: none;
+	display: none;
+	cursor: pointer;
+}
+.fa-xmark {
+	background-color: #ffffff;
+	font-size: 2rem;
+	padding: 0.5rem;
+	border-radius: 50px;
+	cursor: pointer;
+	display: none;
+}
 .navbar {
-	list-style: none;
 	font-family: var(--Gilroy);
 }
 .navbar-ul {
 	position: absolute;
 	list-style: none;
 	display: flex;
+	top: 2%;
 	right: 5%;
 	background-color: var(--official-blue-opacity);
 	padding: 1.3rem;
-	margin-top: 2rem;
 	border-radius: 5px;
 }
 .navbar .navbar-ul .navbar-li {
@@ -112,7 +131,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 12.5rem;
+	max-width: 12.5rem;
 	position: absolute;
 }
 .hero-link .link-left {
@@ -120,6 +139,7 @@
 	color: var(--official-blue);
 	padding: 0.5rem 1.5rem 0.5rem 0.5rem;
 	font-size: 1.2rem;
+	font-weight: 600;
 }
 .hero-link .link-right {
 	background-color: transparent;
@@ -128,6 +148,7 @@
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	margin-left: 13.5rem;
+	font-weight: 600;
 }
 .hero-link .fa-rocket {
 	font-size: 1.7rem;
@@ -146,10 +167,12 @@
 
 /* !ABOUT-US section START here ============================================= */
 .about-us {
-	height: 190vh;
+	height: 180vh;
+	width: 100%;
 	background-image: url(../img/about-upper.png), url(../img/about-button.png);
 	background-position: top, bottom;
 	background-repeat: no-repeat, no-repeat;
+	background-size: contain, contain;
 	position: relative;
 }
 .heading-button {
@@ -209,7 +232,63 @@
 	position: absolute;
 	font-weight: 900;
 	font-size: 2.9rem;
-	top: 90%;
-	left: 43%;
+	position: absolute;
+	top: 95%;
+	left: 58%;
+	transform: translate(-95%, -58%);
 }
 /* !ABOUT-US section END here ============================================= */
+
+@media (max-width: 640px) {
+	.landing-page {
+		background-position: top left, center;
+		background-repeat: no-repeat, no-repeat;
+		background-size: cover, cover;
+		background-color: var(--official-blue);
+		min-height: 46rem;
+	}
+	.navbar-ul {
+		padding-top: 2rem;
+		display: block;
+		top: 0;
+		right: -100%;
+		background-color: var(--official-blue);
+		border-radius: 5px;
+		height: 100vh;
+		width: 50%;
+		text-align: center;
+		z-index: 3;
+		transition: all 0.5s ease;
+	}
+	.navbar .navbar-ul .navbar-li {
+		display: block;
+		margin: 2rem 0;
+	}
+	.fa-bars,
+	.fa-xmark {
+		display: inline;
+	}
+	.hero-text .hero-text-1st,
+	.hero-text .hero-text-2nd {
+		font-size: 2rem;
+		background-color: transparent;
+	}
+	.hero-main {
+		margin-top: 13rem;
+		margin-left: 1.9rem;
+	}
+
+	.hero-link a {
+		max-width: 12.5rem;
+	}
+	.hero-link .link-left {
+		padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+		font-size: 1rem;
+	}
+	.hero-link .link-right {
+		background-color: transparent;
+		padding: 1.1rem 2rem 1.1rem 1rem;
+		font-size: 1rem;
+		margin-left: 11rem;
+	}
+}
