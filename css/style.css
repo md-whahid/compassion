@@ -249,7 +249,7 @@
 }
 
 /* !OUR-SERVICE section END here ============================================= */
-@media(min-width:1200px){
+/* @media(min-width:1200px){
 	.service-container{
 		grid-template-areas: 
 		"personal-care personal-care personal-care personal-care personal-care community-nursing community-nursing community-nursing"
@@ -261,7 +261,7 @@
 		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
 		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
 	}
-}
+} */
 @media (max-width: 640px) {
 	.landing-page {
 		background-position: top left, center;
