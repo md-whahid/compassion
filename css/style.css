@@ -8,8 +8,14 @@
 	--navbar-violet-button: rgb(116, 119, 251);
 	--official-blue: rgb(24, 61, 184);
 	--official-blue-opacity: rgba(24, 61, 184, 0.5);
-	--Gilroy: "Roboto", sans-serif;
+	--Gilroy: "Gilroy", sans-serif;
 	--Quicksand: "Quicksand", sans-serif;
+}
+
+
+@font-face{
+	font-family: "Gilroy";
+	src: url(../fonts/Gilroy-ExtraBold.otf);
 }
 
 /* !NAVBAR section START here ============================================= */
@@ -55,7 +61,7 @@
 	position: absolute;
 	list-style: none;
 	display: flex;
-	top: 2%;
+	top: 1%;
 	right: 5%;
 	background-color: var(--official-blue-opacity);
 	padding: 1.3rem;
@@ -68,9 +74,9 @@
 	text-decoration: none;
 	transition: all 0.3s ease;
 }
-.navbar .navbar-ul .navbar-li:hover {
+/* .navbar .navbar-ul .navbar-li:hover {
 	padding: 0.3rem 1.7rem;
-}
+} */
 .navbar .navbar-ul .navbar-email {
 	background-color: #ffffff;
 	color: var(--navbar-violet-button);
@@ -78,18 +84,18 @@
 	margin-left: 1rem;
 	border-radius: 50px;
 }
-.navbar .navbar-ul .navbar-email:hover {
+/* .navbar .navbar-ul .navbar-email:hover {
 	padding: 0.6rem 2.5rem;
-}
+} */
 .navbar .navbar-ul .navbar-call {
 	background-color: var(--navbar-violet-button);
 	padding: 0.6rem 1.7rem;
 	margin-left: 1rem;
 	border-radius: 50px;
 }
-.navbar .navbar-ul .navbar-call:hover {
+/* .navbar .navbar-ul .navbar-call:hover {
 	padding: 0.6rem 2rem;
-}
+} */
 
 /* !NAVBAR section END here ============================================= */
 
@@ -226,6 +232,36 @@
 }
 /* !ABOUT-US section END here ============================================= */
 
+/* !OUR-SERVICE section START here ============================================= */
+.service-container{
+	display: grid;
+	grid-template-areas: 
+	"personal-care"
+	"community-nursing"
+	"househoid-tasks"
+	"cernter"
+	"social-community"
+	"supported-independent"
+	"transport-assistance";
+}
+.tamplet{
+	border: 1px solid red;
+}
+
+/* !OUR-SERVICE section END here ============================================= */
+@media(min-width:1200px){
+	.service-container{
+		grid-template-areas: 
+		"personal-care personal-care personal-care personal-care personal-care community-nursing community-nursing community-nursing"
+		"personal-care personal-care personal-care personal-care personal-care community-nursing community-nursing community-nursing"
+		"househoid-tasks househoid-tasks househoid-tasks cernter cernter community-nursing community-nursing community-nursing"
+		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
+		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
+		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
+		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
+		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
+	}
+}
 @media (max-width: 640px) {
 	.landing-page {
 		background-position: top left, center;
