@@ -12,8 +12,7 @@
 	--Quicksand: "Quicksand", sans-serif;
 }
 
-
-@font-face{
+@font-face {
 	font-family: "Gilroy";
 	src: url(../fonts/Gilroy-ExtraBold.otf);
 }
@@ -233,35 +232,64 @@
 /* !ABOUT-US section END here ============================================= */
 
 /* !OUR-SERVICE section START here ============================================= */
-.service-container{
+.service-container {
 	display: grid;
-	grid-template-areas: 
-	"personal-care"
-	"community-nursing"
-	"househoid-tasks"
-	"cernter"
-	"social-community"
-	"supported-independent"
-	"transport-assistance";
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(7, 1fr);
 }
-.tamplet{
-	border: 1px solid red;
+.tamplet {
+	/* border: 1px solid red; */
+}
+.grid-personal-care {
+	grid-column: 1/6;
+	grid-row: 1/3;
+	position: relative;
+}
+.grid-community-nursing {
+	grid-column: 6/9;
+	grid-row: 1/4;
+	position: relative;
+}
+.grid-househoid-tasks {
+	grid-column: 1/4;
+	grid-row: 3/6;
+	position: relative;
+}
+.grid-cernter {
+	grid-column: 4/6;
+	grid-row: 3/6;
+	position: relative;
+}
+.grid-social-community {
+	grid-column: 6/9;
+	grid-row: 4/6;
+	position: relative;
+}
+.grid-supported-independent {
+	grid-column: 1/5;
+	grid-row: 6/8;
+	position: relative;
+}
+.grid-transport-assistance {
+	grid-column: 5/9;
+	grid-row: 6/8;
+	position: relative;
 }
 
+.grid-personal-care img,
+.grid-community-nursing img,
+.grid-househoid-tasks img,
+/* .grid-cernter img, */
+.grid-social-community img,
+.grid-supported-independent img,
+.grid-transport-assistance img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* background-color: red; */
+}
 /* !OUR-SERVICE section END here ============================================= */
-/* @media(min-width:1200px){
-	.service-container{
-		grid-template-areas: 
-		"personal-care personal-care personal-care personal-care personal-care community-nursing community-nursing community-nursing"
-		"personal-care personal-care personal-care personal-care personal-care community-nursing community-nursing community-nursing"
-		"househoid-tasks househoid-tasks househoid-tasks cernter cernter community-nursing community-nursing community-nursing"
-		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
-		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
-		"househoid-tasks househoid-tasks househoid-tasks cernter cernter social-community social-community social-community"
-		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
-		"supported-independent supported-independent supported-independent supported-independent transport-assistance transport-assistance transport-assistance transport-assistance"
-	}
-} */
 @media (max-width: 640px) {
 	.landing-page {
 		background-position: top left, center;
