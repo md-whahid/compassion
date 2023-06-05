@@ -277,39 +277,32 @@
 	position: relative;
 }
 .grid-transport-assistance {
-	grid-column: 5/9;
+	grid-column: 5/8;
 	grid-row: 12/16;
 	position: relative;
 }
 
-.grid-personal-care img,
-.grid-community-nursing img,
-.grid-househoid-tasks img,
-/* .grid-cernter img, */
-.grid-social-community img,
-.grid-supported-independent img,
-.grid-transport-assistance img {
+.tamplet img{
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* background-color: red; */
 }
-.grid-personal-care p,
-.grid-community-nursing p,
-.grid-househoid-tasks p,
-.grid-cernter p,
-.grid-social-community p,
-.grid-supported-independent p,
-.grid-transport-assistance p {
+
+.tamplate-center p,
+.tamplet p{
 	position: absolute;
-	color: rgb(0, 0, 0);
+	color: #333333;
 	font-family: var(--Gilroy);
+	font-size: 1.6rem;
+	bottom: 0;
+    left: 50%;
+	transform: translateX(-50%);
 	text-align: center;
-	top: 99%;
-	left: 58%;
-	transform: translate(-95%, -58%);
 }
+
+
+
 /* !OUR-SERVICE section END here ============================================= */
 @media (max-width: 640px) {
 	.landing-page {
