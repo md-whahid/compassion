@@ -233,46 +233,52 @@
 
 /* !OUR-SERVICE section START here ============================================= */
 .service-container {
+	background-image: url(../img/service-img/service-blue-gradient.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.service-container {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-rows: repeat(16, 1fr);
 }
 .tamplet {
-	/* border: 1px solid red; */
+	border: 1px solid red;
 }
 .grid-personal-care {
-	grid-column: 1/6;
-	grid-row: 1/3;
+	grid-column: 1/5;
+	grid-row: 1/5;
 	position: relative;
 }
 .grid-community-nursing {
 	grid-column: 6/9;
-	grid-row: 1/4;
+	grid-row: 1/6;
 	position: relative;
 }
 .grid-househoid-tasks {
 	grid-column: 1/4;
-	grid-row: 3/6;
+	grid-row: 6/10;
 	position: relative;
 }
 .grid-cernter {
 	grid-column: 4/6;
-	grid-row: 3/6;
+	grid-row: 5/11;
 	position: relative;
 }
 .grid-social-community {
 	grid-column: 6/9;
-	grid-row: 4/6;
+	grid-row: 7/12;
 	position: relative;
 }
 .grid-supported-independent {
 	grid-column: 1/5;
-	grid-row: 6/8;
+	grid-row: 11/15;
 	position: relative;
 }
 .grid-transport-assistance {
 	grid-column: 5/9;
-	grid-row: 6/8;
+	grid-row: 12/16;
 	position: relative;
 }
 
@@ -288,6 +294,21 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	/* background-color: red; */
+}
+.grid-personal-care p,
+.grid-community-nursing p,
+.grid-househoid-tasks p,
+.grid-cernter p,
+.grid-social-community p,
+.grid-supported-independent p,
+.grid-transport-assistance p {
+	position: absolute;
+	color: rgb(0, 0, 0);
+	font-family: var(--Gilroy);
+	text-align: center;
+	top: 99%;
+	left: 58%;
+	transform: translate(-95%, -58%);
 }
 /* !OUR-SERVICE section END here ============================================= */
 @media (max-width: 640px) {
