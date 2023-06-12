@@ -229,7 +229,6 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	overflow: hidden;
-	position: relative;
 }
 .center-text-div {
 	color: #333333;
@@ -483,6 +482,52 @@
 	border-radius: 50px;
 }
 /* !OUR-VALUES section END here ============================================= */
+
+/* !REVIEW section START here ============================================= */
+.review-section{
+	position: relative;
+	height: 63vh;
+}
+.review-comments-img {
+	background-image: url(../img/our-values-img/values-comments.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 33rem;
+	width: 70%;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	border: 1px solid red;
+}
+.values-comments-text{
+	margin: 7rem 11rem;
+	text-align: center;
+}
+.values-comments-text p{
+	font-family: var(--secondary-font);
+	font-weight: 500;
+	line-height: 2rem;
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+.values-comments-text hr{
+	width: 50%;
+	border: 1px solid var(--official-blue);
+	margin: 0 auto;
+	color: var(--official-blue);
+	margin-bottom: 2rem;
+}
+.values-comments-text h2{
+	font-family: var(--primary-font-bold);
+	color: var(--official-blue);
+
+}
+
+
+/* !REVIEW section END here ============================================= */
 @media (max-width: 640px) {
 	.landing-page {
 		background-position: top left, center;
